@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVC - Model Views & Controllers</title>
+    <style>
+        body {
+            background-color: black;
+            color: aquamarine;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input {
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 10px;
+            width: 250px;
+        }
+        input[type="submit"] {
+            background-color: aquamarine;
+            color: black;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover {
+            background-color: limegreen;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>MVC - Model Views & Controllers</h1>
+
+    <form action="/form-submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" required>
+
+        <label for="phone">Phone:</label>
+        <input type="number" name="phone" id="phone" pattern="[0-9]{10}" placeholder="10-digit number" required>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
