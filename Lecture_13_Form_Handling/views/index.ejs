@@ -9,28 +9,32 @@
             background-color: black;
             color: aquamarine;
         }
+        label{
+          width: 150px;
+          background-color: blue;
+        }
     </style>
   </head>
   <body>
     <h1>Form Handling</h1>
 
-    <form action="/submit" method="POST">
+    <form action="/form-submit" method="POST">
       <!-- Name Field -->
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
+      <input type="text" id="name" name="name" placeholder="Enter Name" required />
       <br /><br />
 
       <!-- Email Field -->
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+      <input type="email" id="email" name="email" placeholder="Enter Email" required />
       <br /><br />
 
       <!-- Password Field -->
       <label for="password">Password:</label>
-      <input type="password" id="email" name="email" required />
+      <input type="password" id="password" name="password"  placeholder="Enter Password" required />
       <br /><br />
       <!-- Submit Button -->
-      <button type="submit">Submit</button>
+      <input type="submit" value="submit"></input>
     </form>
   </body>
 </html>
